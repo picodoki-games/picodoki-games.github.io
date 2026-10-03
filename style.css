@@ -1,0 +1,134 @@
+:root {
+    --accent: #ff8c32;
+    --accent-dark: #e56f11;
+    --bg: #fffaf5;
+    --card: #ffffff;
+    --text: #222222;
+    --border: #f0d8c6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:
+        "Segoe UI",
+        "Hiragino Sans",
+        "Yu Gothic",
+        sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: 0 auto;
+}
+
+header {
+    padding: 48px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.status {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 20px;
+    border-radius: 999px;
+    background: #fff3e8;
+    color: var(--accent-dark);
+    font-weight: bold;
+}
+
+section {
+    margin: 48px 0;
+}
+
+.games {
+    display: grid;
+    gap: 24px;
+}
+
+.game-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 24px;
+    transition: 0.2s;
+}
+
+.game-card:hover {
+    transform: translateY(-3px);
+}
+
+.game-card h3 {
+    margin-top: 0;
+}
+
+.game-status {
+    color: #777;
+    margin-bottom: 16px;
+}
+
+.play-button {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--accent);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.play-button:hover {
+    background: var(--accent-dark);
+}
+
+.play-button.disabled {
+    background: #bfbfbf;
+    pointer-events: none;
+}
+
+.footer-nav {
+    text-align: center;
+    margin: 48px 0;
+}
+
+.footer-nav a {
+    color: var(--accent-dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-card {
+    background: white;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    padding: 24px;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+}
